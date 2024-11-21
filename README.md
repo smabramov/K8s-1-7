@@ -43,39 +43,39 @@
 
 Создадим новый namespace для задания:
 
-![k1]()
+![k1](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k1.png)
 
-[deployment_b_m.yaml]()
+[deployment_b_m.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/deployment_b_m.yaml)
 
-![k2]()
+![k2](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k2.png)
 
-[pv_vol.yaml]()
+[pv_vol.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/pv_vol.yaml)
 
-[pvc_vol.yaml]()
+[pvc_vol.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/pvc_vol.yaml)
 
-![k3]()
+![k3](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k3.png)
 
 Заходим в контейнер multitool и проверяем файл date.log:
 
-![k4]()
+![k4](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k4.png)
 
 Проверяем файл на ноде:
 
-![k5]()
+![k5](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k5.png)
 
 Удаляем deployment:
 
-![k6]()
+![k6](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k6.png)
 
 Проверяем файлы на ноде:
 
-![k7]()
+![k7](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k7.png)
 
 Файлы остались на ноде. Во-первых, не были удалены pv и pvc, во-вторых, при конфигурировании pv использовался режим ReclaimPolicy: Retain. Retain - после удаления PV ресурсы из внешних провайдеров автоматически не удаляются. После удаления pv файлы так же останутся:
 
-![k8]()
+![k8](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k8.png)
 
-![k9]()
+![k9](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k9.png)
 
 ### Задание 2
 
@@ -92,31 +92,31 @@
 
 ### Решение
 
-![k10]()
+![k10](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k10.png)
 
-[deployment_m.yaml]()
+[deployment_m.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/deployment_m.yaml)
 
-![k11]()
+![k11](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k11.png)
 
-[sc_nfs.yaml]()
+[sc_nfs.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/sc_nfs.yaml)
 
-![k12]()
+![k12](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k12.png)
 
-[pvc_nfs.yaml]()
+[pvc_nfs.yaml](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/code/pvc_nfs.yaml)
 
-![k13]()
+![k13](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k13.png)
 
 Проверим автоматическое создание PV:
 
-![k14]()
+![k14](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k14.png)
 
 Проверим возможность чтения и записи файла изнутри пода:
 
-![k15]()
+![k15](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k15.png)
 
-![k16]()
+![k16](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k16.png)
 
-![k17]()
+![k17](https://github.com/smabramov/K8s-1-7/blob/612bbe89c17a0ec605a3b2e8de07c049076a1863/png/k17.png)
 
 ### Правила приёма работы
 
